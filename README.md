@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+// A closure is a property of an inner function. It allows
+// an inner function to access information of the outer function it was defined in.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +66,15 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+// The closure is located on line 52 at the return statement.
+// The return statement is an anonymous inner function that is accessing the parameter of the outer function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+// The parameter " name " will always be the same. The random number generated could be different.
+
 c. What is the lexical scope of `newRoll`? 
+// newRoll can access the "name" parameter but in this case it accessed the global Math object.
 
 
 ### Task 3 - Stretch Goals
