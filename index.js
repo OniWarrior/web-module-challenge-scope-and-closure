@@ -28,11 +28,18 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+  In counter1, count is lexically scoped with the counter function accessing it then incrementing it.
+  In counter2, count is a global variable that is being accessed by the counter2 function. In other words, it's not nested like counter1.
   
   2. Which of the two uses a closure? How can you tell?
+  Both functions are using closure because in javascript when a function is created, that function
+  is given references to the data outside the function. Which is basically the core idea of what exactly is closure.
+
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better?  I suppose that if you have information that is closely related to each other
+     and you want it contained in a local environment rather than global then 
+     counter1 should be used. If that isn't the case, then counter2 should be used.
 */
 
 // counter1 code
